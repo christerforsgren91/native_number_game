@@ -1,13 +1,13 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import StartGameScreen from './StartGameScreen'
+import { View, Text, StyleSheet, Button } from 'react-native'
 
 const GameOverScreen = (props) => {
   return (
-    <View style={styles.screen} >
+    <View style={styles.screen}>
       <Text>You got it bruh</Text>
       <Text>Number of rounds: {props.roundsNumber}</Text>
       <Text>Number was: {props.userNumber}</Text>
+      <Button title='NEW GAME' onPress={props.onRestart} />
     </View>
   )
 }
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 })
 
 export default GameOverScreen

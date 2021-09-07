@@ -49,7 +49,7 @@ const GameScreen = (props) => {
       guess
     )
     setGuess(nextNumber)
-    setRounds(currentRounds => currentRounds + 1)
+    setRounds((currentRounds) => currentRounds + 1)
   }
 
   return (
