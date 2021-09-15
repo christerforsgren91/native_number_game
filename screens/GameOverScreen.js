@@ -7,7 +7,10 @@ const GameOverScreen = (props) => {
     <View style={styles.screen}>
       <Text style={DefaultStyles.title}>You got it bruh</Text>
       <View style={styles.imageContainer}>
-        <Image source={require('../assets/bar.png')} style={styles.image} />
+        <Image 
+        // source={require('../assets/bar.png')} 
+        source={{uri: 'https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80'}} 
+        style={styles.image} />
       </View>
 
       <Text style={DefaultStyles.bodyText}>
